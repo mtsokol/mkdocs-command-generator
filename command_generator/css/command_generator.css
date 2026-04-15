@@ -1,0 +1,37 @@
+.cmd-gen {
+    border: 1px solid var(--md-typeset-table-color);
+    border-radius: 0.2rem;
+    margin: 1em 0;
+    padding: 1em;
+    background: var(--md-default-bg-color);
+}
+.cmd-gen-row {
+    margin-bottom: 0.5rem;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+.cmd-gen-btn {
+    background: transparent;
+    border: 1px solid var(--md-accent-fg-color);
+    color: var(--md-accent-fg-color);
+    padding: 4px 12px;
+    border-radius: 16px;
+    cursor: pointer;
+    font-size: 0.7rem;
+    transition: all 0.2s;
+}
+.cmd-gen-btn.active {
+    background: var(--md-accent-fg-color);
+    color: var(--md-primary-bg-color);
+}
+.cmd-gen-content {
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 4px;
+    font-family: var(--md-code-font-family);
+    white-space: pre-wrap;
+    background-color: var(--md-code-bg-color);
+    color: var(--md-code-fg-color);
+    border: 1px solid var(--md-typeset-color--lightest);
+}

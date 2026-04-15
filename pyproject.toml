@@ -1,0 +1,30 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "mkdocs-command-generator"
+version = "0.1.0"
+description = "MkDocs plugin for command generating tables."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Mateusz Sokół" }]
+keywords = ["mkdocs", "plugin", "command-generator"]
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Operating System :: OS Independent",
+]
+dependencies = ["mkdocs"]
+
+[project.urls]
+Homepage = "https://github.com/mtsokol/mkdocs-command-generator"
+
+[project.entry-points."mkdocs.plugins"]
+command-generator = "command_generator.plugin:CommandGeneratorPlugin"
+
+[tool.hatch.build.targets.wheel]
+packages = ["command_generator"]

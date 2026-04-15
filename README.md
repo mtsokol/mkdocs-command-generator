@@ -1,0 +1,1 @@
+# mkdocs-command-generator
